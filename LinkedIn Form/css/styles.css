@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 10px;
+    font-family: 'segoe ui';
+}
+
+.logo-box{
+    margin: 1.5rem 3rem;
+    width: 9rem;
+    
+}
+
+.logo{
+    width: 100%;
+}
+
+.main{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    box-shadow: 0px 4px 18px -1px rgb(219, 219, 219);
+    border-radius: 5px;
+    width: 23rem;
+    flex-wrap: wrap;
+}
+
+
+.header-box{
+    margin-bottom: 1.2rem;
+}
+
+.header-primary{
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(44, 44, 44);
+}
+.header-secondary{
+    font-size: .9rem;
+    font-weight: 400;
+    color: rgb(91, 91, 91);
+}
+
+.main-form .input-details input{
+    width: 100%;
+}
+
+.input-details:first-child{
+    margin-bottom: 1rem;
+}
+
+.input-details input{
+    padding: 14px 10px;
+    border: 1px solid rgb(62, 62, 62);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+
+.forget-password{
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+.forget-password a{
+    color: #0A66C2;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.sign-in:first-child{
+    margin-bottom: 1rem;
+}
+
+.btn-box .sign-in-other button{
+    width: 100%;
+    padding: 10px 8px;
+    border-radius: 30px;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.5);
+    transition: all .3s;
+    overflow: none;
+}
+
+.btn-box .sign-in-other button:hover{
+    box-shadow: inset 0 0 0 1.5px rgba(0,0,0,.5);
+
+}
+
+.btn-box .sign-in button{
+    width: 100%;
+    padding: 15px 10px;
+    border:none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.btn-box .sign-in button:first-child{
+    background-color: #0a66c2;
+    color: white;
+}
+
+.btn-box .sign-in button:first-child:hover{
+    background-color: #004182;
+}
+
+.btn-box .or-separator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.or-separator::before{
+    content: "";
+    display: block;
+    height:1px;
+    width: 50%;
+    background-color: rgba(0,0,0,0.15);
+    margin-left: 5px;
+
+}
+
+.or-separator::after{
+    content: "";
+    display: block;
+    height:1px;
+    width: 50%;
+    background-color: rgba(0,0,0,0.15);
+    margin-right: 5px;
+
+}
+
+.or-text{
+    margin: 0 10px 0 10px;
+    font-size: .8rem;
+    color: rgba(0,0,0,0.6);
+    line-height: .42857;
+}
+
+.btn-box .sign-in-other button{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* line-height: 40px; */
+    font-weight: 500;
+    cursor: pointer;
+    color: rgba(0,0,0,.8);
+}
+
+.google-logo{
+    width: 1.7rem;
+    fill: none;
+    margin-right: 5px;
+}
+.forget-password{
+    display: inline-block;
+    border-radius: 15px;
+    padding: 5px;
+    transition: all .2s ;
+}
+.forget-password:hover{
+    display: inline-block;
+    background-color: #D0E8FF;
+    padding: 5px;
+    text-decoration: underline;
+    border-radius: 15px;
+}
+
+.form-bottom{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.join{
+    color: #0A66C2;
+    font-weight: 500;
+}
+.join:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width:800px){
+    .form-box{
+        box-shadow: none;
+    }
+}
